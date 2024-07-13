@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: black;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0,0, 0, 0);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 35px;
+    color:white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color:aqua;
+    text-shadow:  0 0 25px  aqua,0 0 50px aqua;
+    transform: scale(1.1);
+}
+span{
+    color:rgb(7, 243, 231);
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3rem solid transparent;
+    
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color:rgb(7, 243, 231);
+    border-bottom:  3px solid rgb(7, 243, 231);
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: blue;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+
+}
+.contact:hover{
+    background-color: rgb(7, 243, 231);
+    color: white;
+    box-shadow: 0 0 25px rgb(7, 243, 231);
+
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    gap: 8em;
+    padding: 30px 12% 0;
+
+}
+.home-content{
+    max-width: 800px;
+
+}
+.home-content h3{
+    font-size: 43px;
+    color: white;
+}
+.home-content h1{
+    font-size: 63px;
+    line-height: 1.2;
+    color: white;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: white;
+
+}
+.home-content span:hover{
+    text-shadow:  0 0 25px  aqua,0 0 50px aqua ;
+}
+.btn
+{
+    width: 350px;
+    display: flex;
+    gap: 2em;
+}
+.btn1{
+    padding: 15px 28px;
+    background-color:rgb(7, 243, 231);
+    color:white;
+    border-radius: 10px;
+    border: 2px solid rgb(4, 4, 102);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease; 
+    cursor: pointer;
+}
+.btn1:hover{
+    background:rgb(1, 82, 117);
+    color: white;
+}
+.btn2{
+    padding: 15px 28px;
+    background-color:rgb(7, 243, 231);
+    color:white;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease; 
+    cursor: pointer; 
+
+}
+.btn2:hover{
+    background-color: rgb(1,82,117);
+    color: white;
+}
+   
+.img img{
+    border-radius: 50%;
+    width: 300px;
+    box-shadow: 0 0 25px orange,
+    0 0 70px  orange;
+
+    
+}
+.img img:hover{
+    box-shadow: 0 0 25px orange,
+                0 0 70px  orange;
+    box-shadow: 0 0 25px rgb(7, 243, 231),
+                0 0 70px  rgb(7, 243, 231);
+}
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgb(7, 243, 231);
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 50px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background:black;
+}
+.about-img img{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px rgb(7, 243, 231),
+                0 0 50px rgb(7, 243, 231);
+    border-radius: 50%;
+}
+.about-content h1{
+    text-align: left;
+    color: white;
+    font-size: 43px;
+}
+.about-content h3{
+    font-size: 65px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+.Skills{
+    padding: 3rem 0 2.5rem 0;
+}
+.Skills h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+.Skills .item-text span{
+    color:skyblue ;
+}
+.Skills .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.Skills .row{
+    margin: 1rem 0;
+}
+.Skills  .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.Skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+
+}
+.Skills .item-text span:last-child{
+    position: absolute;
+}
+.Skills .item-text .w-90{
+    margin-left: 87%;
+}
+.Skills .item-text .w-80{
+    margin-left: 77%;
+}
+.Skills .item-text .w-60{
+    margin-left: 57%;
+}
+.Skills .item-text .w-75{
+    margin-left: 72%;
+}
+.Skills .item-text .w-70{
+    margin-left: 67%;
+}
+.Skills .item-text .w-50{
+    margin-left: 47%;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+.projects {
+    display: grid;
+    grid-template-rows: auto;
+  }
+  .projects h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 38px;
+    color: white;
+  }
+  
+  .project-card {
+    background-color:black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(7, 243, 231);
+    text-align: center;
+  }
+  .project-card:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(7, 243, 231) 0px 19px 38px, rgb(7, 243, 231) 0px 15px 12px; ;
+  }
+  .project-card img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .project-card h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .project-card p {
+    color:white;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color:rgb(7, 243, 231);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-card a:hover {
+    background-color:rgb(1, 82, 117);
+  }  
+
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: rgb(116, 123, 126);
+    overflow: hidden;
+
+}
+.progress-bar{
+    background: rgb(7, 243, 231) ;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+    width: 89%;
+}
+.progress-bar.w-80{
+    width: 79%;
+}
+.progress-bar.w-60{
+    width: 59%;
+}
+.progress-bar.w-75{
+    width: 74%;
+}
+.progress-bar.w-70{
+    width: 69%;
+}
+.progress-bar.w-50{
+    width: 49%;
+}
+
+.Skills .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+.Contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 38px;
+    color: white;
+}
+.Contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.Contact-form form .input-box{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Contact-form form .input-box input,
+.Contact-form form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 18px;
+    color: black;
+    background: white;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+   
+
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a{
+    font-size: 25px;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px white, 0 0 10px white;
+    transition: 0.3s ease;
+
+}
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-4px);
+    color: white;
+    border: 2px solid skyblue;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+footer ul li a:hover{
+    border-bottom: 3px solid skyblue;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align:center;
+    font-size: 12px;
+    color: white;
+}
